@@ -1,0 +1,52 @@
+/* General container styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Item container styling */
+ 
+  
+  /* Item title styling */
+  .item-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Link styling */
+  .item-title a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.2s;
+  }
+  
+  .item-title a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Hover effect for item title */
+  .item-title:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .item-title {
+      font-size: 1.2rem;
+      padding: 8px 12px;
+    }
+  }
+  

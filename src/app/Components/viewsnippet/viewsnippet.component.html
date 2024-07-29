@@ -1,0 +1,14 @@
+
+<!-- <div *ngIf="singleSnippet" >
+<div class="title">{{singleSnippet.title}}</div>
+<div class="code">{{singleSnippet.code}}</div>
+</div> -->
+
+<div *ngIf="singleSnippet">
+    <div class="snippet-container">
+      <div class="title">{{singleSnippet.title}}</div>
+      <div class="code">{{singleSnippet.code}}</div>
+    </div>
+  </div>
+  <ng-template #loading>Loading snippet...</ng-template>
+  

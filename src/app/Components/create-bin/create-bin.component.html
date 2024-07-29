@@ -1,0 +1,24 @@
+
+<h1>Create code snippet</h1>
+<form [formGroup]="binData" (submit)="submit(binData)" >
+    <h4>Title</h4>
+<input 
+ type="text"
+ placeholder="Enter your title"
+ name="title"
+ [formControl]="title"
+ />
+ <div [hidden]="!title.touched  || title.valid   " style="color:red" >Enter the title of your snippet</div>
+ <h4>Code</h4>
+ <textarea  class="text-cont"
+ type="text"
+ placeholder="Enter your title"
+ name="title"
+ [formControl]="code"
+ ></textarea>
+ <div [hidden]="!code.touched  || code.valid " style="color:red" >Enter the code </div>
+
+ <button type="submit"  [disabled]="binData.invalid" >Create</button>
+</form> 
+
+<!-- <app-all-snippets></app-all-snippets> -->

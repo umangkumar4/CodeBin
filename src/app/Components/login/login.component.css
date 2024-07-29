@@ -1,0 +1,73 @@
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inputEmail, .inputPass {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .errorDiv {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .btn-reset, .btn-green {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-reset {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .btn-green {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn-green:hover {
+    background-color: #45a049;
+  }
+  
+  
+  
+  .errorDiv.show-error {
+    display: block;
+  }
+
+  .btn-green:disabled {
+        cursor:not-allowed;
+        background-color: #ddeedd;
+  }
+  
+
+
+.body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-containor{
+  width:30vw;
+  height: 50vh;
+  border-radius: 2px;
+}

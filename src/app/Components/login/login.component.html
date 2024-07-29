@@ -1,0 +1,39 @@
+<!-- 
+<h1 style="text-align: center; padding:2rem">Login</h1>
+ <form class="form" [formGroup]="loginForm"  >
+
+    <input class="inputEmail" type="email" placeholder="Enter Email" [formControl]="email" />
+    <div class="errorDiv" [hidden]="email.valid || !email.touched " style="color:red;" >Enter correct email</div>
+    <br><br>
+    <input class="inputPass" type="password" placeholder="Enter password" [formControl]="password" />
+    <div class="errorDiv" [hidden]="password.valid || !password.touched " style="color:red;" >Enter correct password and whose length is greater than 5</div>
+<br><br>
+    <button class="btn-reset" (click)="reset()">Reset</button>
+    <button class="btn-green" [disabled]="loginForm.invalid" (click)="submit(loginForm)">Submit</button>
+
+  </form> -->
+<div class="body">
+<div class="form-containor">
+  <form [formGroup]="loginForm">
+    <div class="mb-3">
+      <label for="exampleInputEmail1"  class="form-label">Email address</label>
+      <input type="email" class="form-control" [formControl]="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      <div class="errorDiv" [hidden]="email.valid || !email.touched " style="color:red;" >Enter correct email</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" [formControl]="password" class="form-control" id="exampleInputPassword1">
+      <div class="errorDiv" [hidden]="password.valid || !password.touched " style="color:red;" >Enter correct password and whose length is greater than 5</div>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button class="btn-reset" (click)="reset()">Reset</button>
+    <button (click)="submit(loginForm)" [disabled]="loginForm.invalid" class="btn btn-green">Submit</button>
+  </form>
+</div>
+</div>
+
+

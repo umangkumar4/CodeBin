@@ -1,0 +1,58 @@
+/* General container styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-bottom: 2px solid #ddd;
+    background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Code block styling */
+  .code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    white-space: pre-wrap;
+  }
+  
+  .code span {
+    display: block;
+    padding-left: 10px;
+  }
+  
+  /* Code syntax highlighting (example) */
+  .code .keyword { color: #66d9ef; }
+  .code .string { color: #a6e22e; }
+  .code .comment { color: #75715e; }
+  .code .number { color: #ae81ff; }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 1.5rem;
+      padding: 8px 12px;
+    }
+  
+    .code {
+      padding: 12px;
+    }
+  }
+  

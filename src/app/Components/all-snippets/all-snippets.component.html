@@ -1,0 +1,14 @@
+
+
+<!-- <div  *ngIf="data.length>=1" *ngFor="let item of data" >
+    <div  class="item-title"><a [routerLink]="['/viewsnippet',  item.id ]">{{item.title}}</a></div>
+</div> -->
+<div *ngIf="data.length > 0">
+    <div *ngFor="let item of data">
+      <div class="item-title">
+        <a [routerLink]="['/viewsnippet', item.id]">{{item.title}}</a>
+      </div>
+    </div>
+  </div>
+  <ng-template #loading>No data available</ng-template>
+  
